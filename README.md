@@ -64,6 +64,14 @@ together with functions for
  
 ---
 
+# Installation
+
+```shell
+composer require markbaker/complex-functions:^1.0
+```
+
+(Requires Composer version 2)
+
 # Usage
 
 To create a new complex object, you can provide either the real, imaginary and suffix parts as individual values, or as an array of values passed passed to the constructor; or a string representing the value. e.g
@@ -124,7 +132,7 @@ echo Complex\add($complexString1, $complexString2);
 ```
 If you want to perform the same operation against multiple values (e.g. to add three or more complex numbers), then you can pass multiple arguments to any of the operations.
 
-You can pass these arguments as Complex objects, or as an array or string that will parse to a complex object.
+You can pass these arguments as Complex objects, or as an array, or a string that will parse to a complex object.
 
 ## Using functions
 
@@ -151,7 +159,7 @@ $complexObject = new Complex\Complex($complexString);
 echo Complex\sinh($complexObject);
 ```
 
-When called procedurally using the function, you can pass in the argument as a Complex object, or as an array or string that will parse to a complex object.
+When called procedurally using the function, or statically, you can pass in the argument as a Complex object, or as an array, or a string that will parse to a complex object.
 ```php
 $complexString = '1.23-4.56i';
 
